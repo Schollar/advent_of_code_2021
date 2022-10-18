@@ -16,7 +16,7 @@ const { readFileSync, promises: fsPromises } = require('fs');
 
 // Did have to lookup how this was done.
 function readFile(filename) {
-    const contents = readFileSync(filename, 'utf-8');
+    const contents = fs.readFileSync(filename, 'utf-8');
 
     const arr = contents.split(/\r?\n/);
 
